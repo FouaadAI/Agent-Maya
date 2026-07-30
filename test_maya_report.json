@@ -1,0 +1,238 @@
+{
+  "url": "https://www.google.com",
+  "ingestion": {
+    "original_url": "https://www.google.com",
+    "scheme": "https",
+    "domain": "www.google.com",
+    "path": "",
+    "query_params": {},
+    "fragment": "",
+    "url_hash": "ac6bb669e40e44a8",
+    "risk_indicators": {
+      "suspicious_tld": false,
+      "ip_address": false,
+      "homoglyph": false,
+      "excessive_subdomain": false,
+      "brand_impersonation": true,
+      "suspicious_keywords": [],
+      "encoding_detected": false,
+      "shortener_detected": false
+    },
+    "domain_analysis": {
+      "subdomains": [
+        "www"
+      ],
+      "root_domain": "google.com",
+      "tld": "com",
+      "domain_length": 14,
+      "has_www": true,
+      "domain_age_days": null
+    },
+    "path_analysis": {
+      "depth": 0,
+      "length": 0,
+      "has_file_extension": false,
+      "suspicious_patterns": []
+    },
+    "query_analysis": {
+      "param_count": 0,
+      "has_token": false,
+      "has_session": false,
+      "has_redirect": false,
+      "suspicious_values": []
+    },
+    "preliminary_score": 30
+  },
+  "knowledge": {
+    "query": "www.google.com brand impersonation phishing",
+    "similar_threats": [
+      {
+        "document": "URL: http://www.platxe.shop/ | Threat Type: phishing | Threat Score: 95/100",
+        "metadata": {
+          "url": "http://www.platxe.shop/",
+          "date_added": "2026-05-18 09:08:03.943298",
+          "threat_score": 95,
+          "threat_type": "phishing"
+        },
+        "distance": 0.9257328510284424
+      },
+      {
+        "document": "URL: https://e-stat.b8no2fhz.shop | Threat Type: phishing | Threat Score: 95/100",
+        "metadata": {
+          "date_added": "2026-05-18 09:08:10.459239",
+          "threat_type": "phishing",
+          "threat_score": 95,
+          "url": "https://e-stat.b8no2fhz.shop"
+        },
+        "distance": 0.9527429342269897
+      },
+      {
+        "document": "URL: http://www.ksfheb.shop/ | Threat Type: phishing | Threat Score: 95/100",
+        "metadata": {
+          "threat_score": 95,
+          "url": "http://www.ksfheb.shop/",
+          "threat_type": "phishing",
+          "date_added": "2026-05-18 09:07:59.101625"
+        },
+        "distance": 0.9584846496582031
+      },
+      {
+        "document": "URL: https://www.platxe.shop/ | Threat Type: phishing | Threat Score: 95/100",
+        "metadata": {
+          "url": "https://www.platxe.shop/",
+          "threat_score": 95,
+          "threat_type": "phishing",
+          "date_added": "2026-05-18 09:08:04.236657"
+        },
+        "distance": 0.9682875871658325
+      },
+      {
+        "document": "URL: https://www.roblox.et/communities/6946372401/Avatar-Designers#!/about | Threat Type: phishing | Threat Score: 95/100",
+        "metadata": {
+          "date_added": "2026-05-18 09:08:12.285297",
+          "threat_type": "phishing",
+          "url": "https://www.roblox.et/communities/6946372401/Avatar-Designers#!/about",
+          "threat_score": 95
+        },
+        "distance": 0.970768928527832
+      }
+    ],
+    "threat_count": 5
+  },
+  "analysis": {
+    "threat_score": 20,
+    "recommendation": "ALLOW",
+    "threat_type": "legitimate",
+    "confidence": 95,
+    "reasoning": "Die URL https://www.google.com verweist auf den offiziellen Google-Domain. Es gibt keine Indikatoren für Phishing, Malware oder andere Bedrohungen.",
+    "llm_raw_response": "```json\n{\n  \"threat_score\": 20,\n  \"recommendation\": \"ALLOW\",\n  \"threat_type\": \"legitimate\",\n  \"confidence\": 95,\n  \"reasoning\": \"Die URL https://www.google.com verweist auf den offiziellen Google-Domain. Es gibt keine Indikatoren für Phishing, Malware oder andere Bedrohungen.\"\n}\n```"
+  },
+  "takedown": {
+    "generated_at": "2026-05-24T03:56:33.168196",
+    "threat_score": 20,
+    "recommendation": "ALLOW",
+    "threat_type": "legitimate",
+    "vectors": {
+      "email_abuse": {
+        "enabled": true,
+        "template": "email_abuse",
+        "recipients": [
+          "abuse@unknown",
+          "abuse@hosting-provider.com"
+        ],
+        "subject": "URGENT: Phishing/Malware Report - unknown",
+        "body_template": "\nDear Abuse Team,\n\nI am reporting a malicious URL that requires immediate attention.\n\nURL: unknown\nThreat Type: legitimate\nThreat Score: 20/100\nDetection Date: 2026-05-24 03:56:33\n\nTHREAT ANALYSIS:\nDie URL https://www.google.com verweist auf den offiziellen Google-Domain. Es gibt keine Indikatoren für Phishing, Malware oder andere Bedrohungen.\n\nEVIDENCE:\n{\n  \"url\": \"unknown\",\n  \"risk_indicators\": {},\n  \"threat_score\": 20,\n  \"llm_analysis\": \"Die URL https://www.google.com verweist auf den offiziellen Google-Domain. Es gibt keine Indikatoren f\\u00fcr Phishing, Malware oder andere Bedrohungen.\"\n}\n\nRECOMMENDED ACTIONS:\n1. Immediate suspension of the URL/domain\n2. Preservation of logs for investigation\n3. Notification to affected parties if applicable\n\nThis is a URGENT security matter. Please acknowledge receipt and provide a timeline for action.\n\nBest regards,\nAgent Maya - Automated Cyber-Defense System\n",
+        "attachments": [
+          "screenshot.png",
+          "analysis_report.json"
+        ],
+        "priority": "MEDIUM"
+      },
+      "hosting_provider": {
+        "enabled": true,
+        "template": "hosting_abuse",
+        "target": "Hosting Provider Abuse Desk",
+        "report_url": "https://abuseipdb.com/report",
+        "data": {
+          "url": "unknown",
+          "category": "legitimate",
+          "evidence": {
+            "url": "unknown",
+            "risk_indicators": {},
+            "threat_score": 20,
+            "llm_analysis": "Die URL https://www.google.com verweist auf den offiziellen Google-Domain. Es gibt keine Indikatoren für Phishing, Malware oder andere Bedrohungen."
+          }
+        }
+      },
+      "registrar": {
+        "enabled": true,
+        "template": "registrar_abuse",
+        "target": "Registrar für unknown",
+        "report_url": "https://www.icann.org/compliance/complaint",
+        "data": {
+          "domain": "unknown",
+          "violation_type": "Phishing/Malware Distribution",
+          "evidence": {
+            "url": "unknown",
+            "risk_indicators": {},
+            "threat_score": 20,
+            "llm_analysis": "Die URL https://www.google.com verweist auf den offiziellen Google-Domain. Es gibt keine Indikatoren für Phishing, Malware oder andere Bedrohungen."
+          }
+        }
+      },
+      "browser_vendors": {
+        "enabled": true,
+        "template": "browser_vendor",
+        "vendors": [
+          {
+            "name": "Google Safe Browsing",
+            "url": "https://safebrowsing.google.com/safebrowsing/report_phish/"
+          },
+          {
+            "name": "Microsoft SmartScreen",
+            "url": "https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site"
+          },
+          {
+            "name": "Mozilla Safe Browsing",
+            "url": "https://safebrowsing.googleapis.com/"
+          }
+        ],
+        "data": {
+          "url": "unknown",
+          "threat_type": "legitimate",
+          "threat_score": 20
+        }
+      },
+      "search_engines": {
+        "enabled": true,
+        "template": "search_engine",
+        "engines": [
+          {
+            "name": "Google",
+            "url": "https://search.google.com/search-console/remove-outdated-content"
+          },
+          {
+            "name": "Bing",
+            "url": "https://www.bing.com/webmaster/tools/urlremoval"
+          }
+        ],
+        "data": {
+          "url": "unknown",
+          "reason": "Malicious content - Phishing/Malware"
+        }
+      },
+      "social_platforms": {
+        "enabled": false,
+        "template": "social_platform",
+        "platforms": [
+          {
+            "name": "Twitter/X",
+            "url": "https://help.twitter.com/forms/safety-and-security"
+          },
+          {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/hacked"
+          },
+          {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/help/linkedin/answer/1359"
+          }
+        ],
+        "data": {
+          "url": "unknown",
+          "threat_type": "legitimate"
+        }
+      }
+    },
+    "action_items": [],
+    "priority": "LOW",
+    "estimated_impact": {
+      "financial_risk": "MEDIUM",
+      "data_risk": "MEDIUM",
+      "reputation_risk": "NONE",
+      "affected_users_estimate": "UNKNOWN"
+    }
+  },
+  "threat_score": 20,
+  "recommendation": "ALLOW"
+}

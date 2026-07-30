@@ -1,0 +1,37 @@
+{
+  "ollama": {
+    "base_url": "http://127.0.0.1:11434",
+    "models": {
+      "analysis": "qwen2.5-coder:cloud",
+      "reasoning": "gemma4:cloud",
+      "embedding": "nomic-embed-text"
+    }
+  },
+  "chromadb": {
+    "persist_directory": "./knowledge_base/chroma_db",
+    "collection_name": "threat_intelligence"
+  },
+  "threat_sources": {
+    "phishtank": {
+      "enabled": true,
+      "api_url": "https://checkurl.phishtank.com/checkurl/"
+    },
+    "google_safe_browsing": {
+      "enabled": false,
+      "api_key_env": "GOOGLE_SAFE_BROWSING_KEY"
+    }
+  },
+  "takedown": {
+    "providers": {
+      "email": {
+        "enabled": true,
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587
+      },
+      "hosting": {
+        "enabled": true,
+        "abuse_db_url": "https://abuseipdb.com/api/v2/report"
+      }
+    }
+  }
+}
